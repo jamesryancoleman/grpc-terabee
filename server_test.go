@@ -69,7 +69,7 @@ func TestGet(t *testing.T) {
 	s := StartServer("0.0.0.0:50069")
 
 	// set up connection to server
-	conn, err := grpc.Dial(s.Addr, grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.NewClient(s.Addr, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Fatalf("did not connect >> %s", err.Error())
 	}
