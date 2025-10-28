@@ -6,7 +6,7 @@ go 1.22.3
 // replace github.com/jamesryancoleman/bos => ../../
 // use below for local
 
-replace github.com/jamesryancoleman/bos => ../../../ 
+replace github.com/jamesryancoleman/bos => ../../
 require github.com/jamesryancoleman/bos v0.0.0-00010101000000-000000000000
 
 require (

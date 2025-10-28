@@ -21,6 +21,7 @@ import (
 var serialRe = regexp.MustCompile(`^([a-zA-Z0-9]+).local`)
 var ipRe = regexp.MustCompile(`^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$`)
 
+// this is an anti-pattern and should be fixed
 var (
 	Linfo  *log.Logger
 	Lwarn  *log.Logger
